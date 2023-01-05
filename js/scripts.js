@@ -19,7 +19,7 @@ const products = [
 	// 	"url": "likewallet.html"
 	// },
 	{
-		"title": "Anomaly Prediction for UF/XMF Filtration",
+		"title": "Anomaly Prediction for UF/XMF Filtration using Machine Learning",
 		"description": "Developed a full-stack web application, data pipeline, and predictive model for the monoclonal antibody filtration process @ Amgen",
 		"banner": "https://miro.medium.com/max/600/1*nqzWupxC60iAH2dYrFT78Q.png",
 		"url": "autoencoder.html"
@@ -35,7 +35,7 @@ const projects = [{
 },
 {
 	"title": "STI/UTI Detection via Microfluidics",
-	"description": "Designed, prototyped, and secured funding for a microfluidic device for rapid, point-of-care detection",
+	"description": "Designed, prototyped, and secured funding for a rapid, point-of-care detection microfluidic device",
 	"banner": "https://images.squarespace-cdn.com/content/v1/5ba524bcbfba3e3c65590b73/1560012686245-JHIBQ0SXL57E4Q33KT7S/DSC07430.jpg",
 	"url": "clean_slate.html"
 }];
@@ -114,7 +114,7 @@ class MessageBot extends React.Component {
 
 			<div className="chatContainer animated slideInUp d-flex flex-row justify-content-start align-items-end">
 				<div className="thumbnail" id={"pic-" + ids[0]}>
-					<img src="https://yt3.ggpht.com/ytc/AMLnZu8sY4npZDsZ88EWUi_J-u82AYVt1jY5JxxRD5uTog=s900-c-k-c0x00ffffff-no-rj"></img>
+					<img src="img/favicon.png"></img>
 				</div>
 				<ul className="chatBubbles">
 					{messages}
@@ -257,7 +257,7 @@ $(document).on("click", "#btnAboutMe", function () {
 	messagesRemaining -= 1;
 	$(".replyButtons").before($("#userReplies").html());
 	//Set messages for 'about me' reply
-	var aboutMe2 = "I'm 27 years old and studied Chemical Engineering @ UC Berkeley's College of Chemistry -- I've ventured away from the life science industry as you may have noticed!";
+	var aboutMe2 = "I'm 27 years old and studied Chemical Engineering @ UC Berkeley's College of Chemistry -- I've ventured away from the laboratory life as you may have noticed!";
 	var id2 = "chat-" + (totalMessages - messagesRemaining + 1).toString();
 	var aboutMe3 = "I'm looking to transition into a product-facing team! If you've got any leads, please hit me up at kanoacook@berkeley.edu 👍";
 	var id3 = "chat-" + (totalMessages - messagesRemaining + 2).toString();

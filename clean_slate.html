@@ -1,96 +1,166 @@
 <div class="modal-body">
 
-	<div id="carousel" class="carousel slide" data-ride="carousel" data-interval="false">
-		<div class="carousel-inner">
-			<div class="carousel-item active">
-				<div class="d-flex align-items-center" style="height: 100%" alt="Second slide">
-					<div style="width:100%;height:0px;position:relative;padding-bottom:56.250%;"><iframe
-							src="https://streamable.com/s/agndv/bkwdtz" frameborder="0" width="100%" height="100%"
-							allowfullscreen
-							style="width:100%;height:100%;position:absolute;left:0px;top:0px;overflow:hidden;"></iframe>
-					</div>
+	<!-- <script>
+		(function(d, s, id){
+			var js, fjs = d.getElementsByTagName(s)[0];
+			if (d.getElementById(id)) {return;}
+			js = d.createElement(s); js.id = id;
+			js.src = "https://assets.gfycat.com/gfycat.js";
+			fjs.parentNode.insertBefore(js, fjs);
+		}(document, 'script', 'gfycat-js'));
+	</script> -->
+
+	<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+		<span aria-hidden="true">&times;</span>
+	</button>
+
+	<div class="jumbotron jumbotron-fluid" style="background-color: #E91E63;">
+		<div class="container" style="color:#FFFFFF; text-align:center">
+			<h1>Clean Slate</h1>
+			<h2>Mitigate the spread of STDs via rapid, non-invasive point-of-care STD diagnostics
+			</h2>
+		</div>
+	</div>
+
+	<div class="jumbotronExtension" style="background-color: #E91E63;"></div>
+
+	<div class="screenFull text-center">
+		<img class="screenshot"
+			src="https://images.squarespace-cdn.com/content/v1/5ba524bcbfba3e3c65590b73/1560012686245-JHIBQ0SXL57E4Q33KT7S/DSC07430.jpg">
+	</div>
+
+	<div class="container-fluid">
+		<div class="container">
+			<h1 class="mb-4">My Role</h1>
+
+			<div class="row">
+
+				<div class="col-sm-12 col-md-6 mb-3">
+					<h2>User Insights & Ideation 🧠</h2>
+					<p>Interviewed over 1,000 students, doctors, and health practioners to assess how prevalent STIs are
+						amongst the younger population, and their awareness on the issue.</p>
+				</div>
+
+				<div class="col-sm-12 col-md-6 mb-3">
+					<h2>Prototyping and Testing 🔬</h2>
+					<p>I designed the microfluidic channels and conducted COMSOL simulations to simulate the flow of
+						urine into the device. You would be surprised how you cannot assume urine behaves like water at
+						the nano-level 😅.</p>
+				</div>
+
+				<div class="col-sm-12 col-md-6 mb-3">
+					<h2>Business Development 📈</h2>
+					<p> Created the business model, <a
+							href="https://docs.google.com/presentation/d/1zJECus0m4jvMMm_sSs4FdgB9dR6ZJIMmNn8XNXj9fkc/edit#slide=id.g57d8871090_1_64">pitch
+							decks</a>, and sought out funding opportunities for our device</p>
+				</div>
+
+			</div>
+		</div>
+	</div>
+
+	<div class="container-fluid" style="background-color: #FFFFFF; border-radius: 0px 0px 0px 3000px / 100px;">
+		<div class="container">
+			<h1>The Problem</h1>
+			<h2 class="mb-3">In America, one in two sexually active individuals under the age of 25 is expected to
+				contract an STD -- 70% of which is asymptomatic!</h2>
+			<li>The current process for STI detection takes 2-5 days to deliver results, which is anxiety inducing</li>
+			<li>Current costs for at-home etesting ranges from $50-$100</li>
+			<li>Typical point-of-care devices require invasive methods of sample extraction, and the overall process has
+				a lack of privacy</li>
+		</div>
+	</div>
+
+	<div class="container-fluid">
+		<div class="container">
+			<h1 class="mb-4">Our Approach</h1>
+			<p> A low-cost, rapid, non-invasive microfluidic device that takes is able to inform users of potential
+				STI/UTIs!
+				The process is as follows:</p>
+			<ol>
+				<li align="left">25mL of non-first pass urine is deposited into the device. </li>
+				<li align="left">The device is placed on a plastic stand, and an app is launched.</li>
+				<li align="left">A series of LED lights is shown onto the filter for 10 minutes. This acts a
+					thermocouple for
+					replicating
+					the DNA -- think PCR!
+				</li>
+				<li align="left">A push notification will contain the results. </li>
+			</ol>
+		</div>
+	</div>
+
+
+	<div class="container-fluid" style="background-color: #FFFFFF; border-radius: 0px 0px 0px 3000px / 100px;">
+		<div class="container">
+			<h1>Background</h1>
+			<h2 class="mb-4">It all started as a class project!</h2>
+			<p>3 classmates got together in a microfluidics class with the idea of creating a microfluidic device
+				capable of performing
+				PCR on a microfluidic device. It just so happened that our professor <a
+					href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5362183/">had already done this</a>! <br><br>
+				With his help, we had the idea of using PCR to test for the presence of bacterial infection biomarkers
+				(Chlamydia and UTIs); however, as
+				an undergraduate team, we had a tough time finding a medical collaborator that would give us clinical
+				urine samples. This is where we got creative! <br><br>Since
+				<i>E.coli</i> is the most prevalent bacterial strain in a urinary tract infection (UTI), we would
+				validate our device against this before trying other diseases!
+			</p>
+		</div>
+	</div>
+
+
+	<div class="container-fluid" style="background-color: #212121; color: #F5F5F5;">
+		<div class="container text-center">
+			<h1>The Device</h1>
+			<h2 class="mb-4">Introducing CleanSlate</h2>
+			<p>CleanSlate is a microfluidic device that filters a patient's urine, simultaneously lyses bacterial DNA
+				and
+				<a href="https://pubs.acs.org/doi/abs/10.1021/acsami.9b23591">performs PCR</a> by shining LED light onto
+				a plasmnonic gold nanofilm,
+				and then glows upon the presence of a bacterial biomarker. Make sense? <br><br>
+				TL;DR, you pee on the device, shine your phone flashlight for 10min, and it'll glow if you have an
+				infection.
+			</p>
+			<img class="img-fluid screenshot" src="img/devices.png">
+			<div class="row mt-5 mb-5">
+				<div class="col-sm-12 text-center" style="margin-bottom: 48px;">
+					<h3 class="mb-4">Initially we started with PDMS on a silicon wafer for uniform fabrication, but we
+						found that the channels were too narrow to process as much urine as desired.
+					</h3>
+					<img class="img-fluid screenshot" src="img/nano_fab.png">
+				</div>
+				<div class="col-sm-12 text-center" style="margin-bottom: 48px;">
+					<h3 class="mb-4">We conducted a live/dead stain cell viability assay to show that cells were
+						actually lysed by our filter!</h3>
+					<img class="img-fluid screenshot" src="img/live_dead_stain.jpg">
+				</div>
+				<div class="col-sm-12 text-center">
+					<h3 class="mb-4">And, this is the results of the DNA replication after a PCR cycle to show that we
+						successfully replicated <i>E.coli</i> DNA and acted as a biomarker for UTIs!</h3>
+					<img class="img-fluid screenshot" src="img/dna_replication.png">
 				</div>
 			</div>
-			<!-- <div class="carousel-item">
-				<img class="d-block" src="https://i.imgur.com/oI6YIn6.jpg" alt="Second slide">
-			</div>
-			<div class="carousel-item">
-				<img class="d-block" src="https://i.imgur.com/O4NCwwV.png" alt="Third slide">
-			</div>
-			<div class="carousel-item">
-				<img class="d-block" src="https://i.imgur.com/LAKc3TA.jpg" alt="Fourth slide">
-			</div> -->
 		</div>
-		<a class="carousel-control-prev" href="#carousel" role="button" data-slide="prev">
-			<i class="fa fa-chevron-left fa-2x" data-fa-transform="left-1"></i>
-		</a>
-		<a class="carousel-control-next" href="#carousel" role="button" data-slide="next">
-			<i class="fa fa-chevron-right fa-2x" data-fa-transform="right-1"></i>
-		</a>
 	</div>
 
-	<div class="modalDescription" style="border-top: solid 1px #EEEEEE;">
-		<h1 class="modal-title" id="modalTitle">STI/UTI Detection via Microfluidics</h1>
-		<p class="mb-2">In America, one in two sexually active individuals under the age of 25 is expected to contract
-			an STD. The current process for STI detection takes 2-5 days to deliver results, which is anxiety inducing.
-			Current
-			costs for testing ranges from $50-$100. Typical point-of-care devices require invasive methods of sample
-			extraction, and the
-			overall process has a severe lack of privacy.
-		</p>
-		<p>
-			The Clean Slate microfluidic device is designed to be an rapid, discrete, and non-invasive alternative to
-			current STI
-			testing methods. The process is as follows:
-		</p>
-		<p align="left">1. 25mL of non-first pass urine is deposited into the device. </p>
-		<p align="left">2. The device is placed on a plastic stand, and an app is launched.</p>
-		<p align="left">3. A series of LED lights is shown onto the filter for 10 minutes. This acts a
-			thermocouple for
-			replicating
-			the DNA -- think PCR!
-		</p>
-		<p align="left">4. A push notification will contain the results. </p>
-
-	</div>
-	<div class="modal-body-text">
-		<h1 class="mt-4 mb-5">Roles and Achievements</h1>
-		<div class="row mb-4">
-			<div class="col-xs-12 col-md-2 roleIcon"><i class="fas fa-wrench fa-3x mb-2"></i></div>
-			<p class="col-xs-12 col-md-10">What started off as a microfluidics class project evolved into a venture with
-				full support from our laboratory PI Luke Lee. Using his intellectual property on
-				nanofiltration, cell lysis, and DNA replication we fleshed out a proof-of-concept microfluidic device
-				that we planned
-				to use on clinical STI urine. Instead, we were able to test our efficacy against UTI's with some clever
-				thinking 😏.
-				Since <i>E.coli</i> makes up 90% of UTI cases and is the most common bacterial strain used
-				in cloning. We were able to test the efficacy of our device towards detecting UTIs.
-			</p>
-		</div>
-		<div class="row mb-4">
-			<div class="col-xs-12 col-md-2 roleIcon"><i class="fas fa-code fa-3x mb-2"></i></div>
-			<p class="col-xs-12 col-md-10"> On the experimentation side, I designed the microfluidic channels and
-				conducted COMSOL simulations to simulate the
-				flow of urine into the device. You would be surprised how you cannot assume urine behaves like water at
-				the nano-level. On the business side, I worked alongside Mehek Mohan to pitch our device and
-				secure funding. We conducted a full
-				competitive landscape to assess the market opportunity, and our go-to-market (GTM) strategy.
+	<div class="container-fluid" style="background-color: #FFFFFF; border-bottom-right-radius: 3000px 100px;">
+		<div class="container">
+			<h2 class="mt-5 mb-3">Learnings</h2>
+			<p>We quickly learned that having a biotechnology startup is a steep hurdle. R&D is expensive,
+				no one trusts you with biohazards unless you can fully substantiate your claims in advance via prior
+				research,
+				and everyone will think you're crazy until proven otherwise! It was exhilarating. Since our PI was
+				moving from Berkeley to
+				Harvard, we would have needed a large cash injection if we wanted to keep pursuing this idea further,
+				which was a huge hinderance. We
+				had looked into the SBIR process for funding or splitting our team into tech-side and business-side, but
+				ultimately we decided that we
+				could hang our hats and say it was a fun ride since the prospects of life were sounding a lot more
+				promising at such young ages. <br><br>
+				A summary that I had written can be found on the Medium article <a
+					href="https://medium.com/sep-berkeley/rethinking-stds-41bdde8e84ec">here</a>!
 			</p>
 
-		</div>
-		<div class="row mb-4">
-			<div class="col-xs-12 col-md-2 roleIcon"><i class="fas fa-users fa-3x mb-2"></i></div>
-			<p class="col-xs-12 col-md-10">We managed to secure $5,000 in funding from UC Berkeley's LAUNCH accelerator
-				<a href="https://www.uclaunch.com/">(link)</a>; however, we ultimately decided to not pursue the venture
-				further. With our PI moving from UC
-				Berkeley to Harvard, we lacked a decent amount of guidance in our main operating expense -- laboratory
-				space & reagents. We helped in the drafting of the
-				patent process, in addition to being acknowledged on the manuscript.
-			</p>
-		</div>
-		<button type="button" class="btn btn-primary closeModal mt-1" data-dismiss="modal" aria-label="Close">
-			Exit
-		</button>
-	</div>
 
-</div>
+		</div>

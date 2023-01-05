@@ -257,7 +257,7 @@ $(document).on("click", "#btnAboutMe", function () {
 	messagesRemaining -= 1;
 	$(".replyButtons").before($("#userReplies").html());
 	//Set messages for 'about me' reply
-	var aboutMe2 = "I'm 27 years old and studied Chemical Engineering @ UC Berkeley's College of Chemistry -- I've ventured away from scientific research as you may have noticed!";
+	var aboutMe2 = "I'm 27 years old and studied Chemical Engineering @ UC Berkeley's College of Chemistry -- I've ventured away from the life science industry as you may have noticed!";
 	var id2 = "chat-" + (totalMessages - messagesRemaining + 1).toString();
 	var aboutMe3 = "I'm looking to transition into a product-facing team! If you've got any leads, please hit me up at kanoacook@berkeley.edu 👍";
 	var id3 = "chat-" + (totalMessages - messagesRemaining + 2).toString();

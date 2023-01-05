@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta property="og:url" content="https://kanoacook.github.io/" />
+	<meta property="og:type" content="profile" />
+	<meta property="og:title" content="Kanoa's Portfolio" />
+	<meta property="og:description" content="Check out the stuff I've built :)" />
+	<meta property="og:image"
+		content="https://yt3.ggpht.com/ytc/AMLnZu8sY4npZDsZ88EWUi_J-u82AYVt1jY5JxxRD5uTog=s900-c-k-c0x00ffffff-no-rj" />
+	<meta name="theme-color" content="#007bff">
+
+	<title>Kanoa Cook</title>
+
+	<link rel="icon" href="img/favicon.png">
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+		integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+	<!-- Fonts -->
+	<link href="https://fonts.googleapis.com/css?family=Roboto|Roboto:medium|Roboto:light|Roboto:thin" rel="stylesheet">
+	<!-- Waves CSS -->
+	<link href="css/waves.min.css" rel="stylesheet">
+	<!-- animate CSS -->
+	<link href="css/animate.css" rel="stylesheet">
+	<!-- Custome Styles CSS -->
+	<link href="css/style.css" rel="stylesheet">
+	<!-- Font Awesome -->
+	<script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
+	<!--React-->
+	<script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
+	<script crossorigin src="https://unpkg.com/react@16/umd/react.development.js"></script>
+	<script crossorigin src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"></script>
+
+
+</head>
+
+<body>
+
+	<div class="container fixed-bottom d-flex flex-column justify-content-center">
+		<div class="chatContainer animated slideInUp d-flex flex-row justify-content-start align-items-end">
+			<div class="thumbnail" id="pic-intro">
+				<img
+					src="https://yt3.ggpht.com/ytc/AMLnZu8sY4npZDsZ88EWUi_J-u82AYVt1jY5JxxRD5uTog=s900-c-k-c0x00ffffff-no-rj">
+			</div>
+			<ul class="chatBubbles">
+				<li class="chatBubble chatIntro animated slideInUp" id="chat-1">Hi 👋 </li>
+				<li class="chatBubble chatIntro animated slideInUp" id="chat-2">I'm Kanoa, nice to meet you! </li>
+				<li class="chatBubble chatIntro animated slideInUp" id="chat-3">I can tell you more about my experience
+					and projects</li>
+				<li class="chatBubble chatIntro animated slideInUp" id="chat-4">What would you like to hear about?</li>
+			</ul>
+		</div>
+
+		<div class="replyButtons align-self-end">
+			<button id="btnProducts" type="button" class="btn btn-outline-primary">Software/Data Science</button>
+			<button id="btnProjects" type="button" class="btn btn-outline-primary ml-2">Science</button>
+			<button id="btnAboutMe" type="button" class="btn btn-outline-primary ml-2">About me</button>
+		</div>
+
+		<!-- Modal -->
+		<div class="modal fade" id="modalContainer" tabindex="-1" role="dialog" aria-labelledby="modalTitle"
+			aria-hidden="true">
+			<div class="modal-dialog" role="document">
+				<div class="modal-content">
+				</div>
+			</div>
+		</div>
+
+		<div id="footer">
+			<br>Made by Kanoa Cook</br>
+			<a href="https://github.com/kanoacook" target="_blank"><i class="fab fa-github"></i></a>
+			<a href="https://www.linkedin.com/in/kanoacook/" target="_blank"><i class="fab fa-linkedin"></i></a>
+		</div>
+
+	</div>
+
+	<div id="userReplies" style="display:none;"></div>
+	<div id="botReplies" style="display:none;"></div>
+	<div id="products" style="display:none;"></div>
+	<div id="projects" style="display:none;"></div>
+	<div id="aboutMe" style="display:none;"></div>
+	<div id="outro" style="display:none;"></div>
+
+	<!-- jQuery, Popper.js, Bootstrap JS, Waves.js -->
+	<script src="https://code.jquery.com/jquery-3.3.1.min.js"
+		integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+	<script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+		integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+		crossorigin="anonymous"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+		integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+		crossorigin="anonymous"></script>
+	<script type="text/javascript" src="js/waves.min.js"></script>
+	<!--Custom scripts-->
+	<script type="text/babel" src="js/scripts.js"></script>
+</body>
+
+</html>

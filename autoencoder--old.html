@@ -1,0 +1,47 @@
+<div class="modal-body">
+	<div class="modalDescription" style="border-top: solid 1px #EEEEEE;">
+		<h1 class="modal-title" id="modalTitle">Anomaly Prediction for UF/XMF Filtration</h1>
+		<p class="mb-2">At Amgen, the filtration step of monoclonal antibodies is monitored in real-time using PI and PI
+			Historian, the yield
+			is measured using an MES system, and any sort of equipment maintenence is recorded in Maximo -- getting
+			these systems to talk to
+			each other requires some data engineering!
+		</p>
+		<div style="width:100%;position:relative;padding-bottom:56.250%;" alt="First slide">
+			<img src="img/rtatf_diagram.png" frameborder="0" width="100%" height="100%" allowfullscreen></img>
+		</div>
+		<div class="modal-body-text">
+			<h1 class="mt-4 mb-5">Data Engineering & Visualization</h1>
+			<div class="row mb-4">
+				<div class="col-xs-12 col-md-2 roleIcon"><i class="fas fa-users fa-3x mb-2"></i></div>
+				<p class="col-xs-12 col-md-10"> I leveraged Databricks to create an automated data pipeline to fetch
+					information from
+					the source systems using their APIs and store the data into AWS Redshift. We built a webhook such
+					that
+					the data was
+					only fetched when new data was created -- instead of trying to pull the data on a scheduled cadence.
+					Joining all of the
+					data together in one dashboard <i>Spotfire</i>, allowed for our user group to have all of the
+					relevant
+					information in one
+					spot. Score! However, we decided to go a step further.
+				</p>
+			</div>
+			<div class="row mb-4">
+				<div class="col-xs-12 col-md-2 roleIcon"><i class="fas fa-wrench fa-3x mb-2"></i></div>
+				<p class="col-xs-12 col-md-10">We created two separate ML functions (slow-feature analysis and an
+					autoencoder) to detect any variations
+					from ideal operation. My co-worker developed a SFA algorithm that would take user-inputted baselines
+					to
+					act as training group for the algorithm
+					that serves as the "ideal" operations. I created a web application for this model selection in Dash.
+					Additionally, I developed an autoencoder that
+					would be able to predict a bad batch without user-inputted baselines to eliminate bias!
+				</p>
+			</div>
+			<button type="button" class="btn btn-primary closeModal mt-1" data-dismiss="modal" aria-label="Close">
+				Exit
+			</button>
+		</div>
+
+	</div>

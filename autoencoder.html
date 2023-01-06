@@ -1,73 +1,143 @@
 <div class="modal-body">
+	<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+		<span aria-hidden="true">&times;</span>
+	</button>
 
-	<div id="carousel" class="carousel slide" data-ride="carousel" data-interval="false">
-		<div class="carousel-inner">
-			<div class="carousel-item active">
-				<div class="d-flex align-items-center" style="height: 100%">
-					<!-- <div style="width:100%;position:relative;padding-bottom:56.250%;" alt="First slide"><iframe
-							src="https://i.imgur.com/WPuakcV.png" frameborder="0" width="100%" height="100%"
-							allowfullscreen
-							style="width:100%;height:100%;position:absolute;left:0px;top:0px;overflow:hidden;"></iframe>
-					</div> -->
+	<div class="jumbotron jumbotron-fluid" style="background-color: #E91E63;">
+		<div class="container" style="color:#FFFFFF; text-align:center">
+			<h1>Anomaly Prediction for UF/XMF Filtration using Machine Learning</h1>
+			<h2>A case study was done at Amgen to show how predicting filter failure at this ONE step in the
+				process
+				could save millions of dollars per manufacturing site, per year!
+			</h2>
+		</div>
+	</div>
+
+	<div class="jumbotronExtension" style="background-color: #E91E63;"></div>
+
+	<div class="screenFull text-center">
+		<img class="screenshot" src="img/rtatf_diagram.png">
+	</div>
+
+	<div class="container-fluid">
+		<div class="container">
+			<h1 class="mb-4">My Role</h1>
+
+			<div class="row">
+				<div class="col-sm-12 col-md-6 mb-3">
+					<h2>Data Engineering 🌥</h2>
+					<p> I set up a Databricks job to automate a data pipeline to fetch information from OSI PI
+						(hardware),
+						Maximo (maintenence records), and our MES system (batch records)! The information was stored
+						into our AWS Redshift cloud.</p>
+				</div>
+
+				<div class="col-sm-12 col-md-6 mb-3">
+					<h2>Data Analyst 📈</h2>
+					<p>The data was visualized using Spotfire for our manufacturing staff to enable them to be more
+						informed on our manufacturing
+						process from a 1,000ft view. Upstream operations can see potential roadblocks, and downstream
+						can see potential delays!
+					</p>
+				</div>
+
+				<div class="col-sm-12 col-md-6 mb-3">
+					<h2>Front-End Developer 🎨</h2>
+					<p> Enhanced the user's ability to predict batches in real time by leveraging a slow-feature
+						analysis Machine Learning algorithm. I
+						built a <a href="https://dash.plotly.com/">Dash</a> app to enable users to select baseline
+						batches to train the model, and predict
+						a batch's success.</p>
+				</div>
+				<div class="col-sm-12 col-md-6 mb-3">
+					<h2>Machine Learning Engineer 🧠</h2>
+					<p> Built a slow-feature analysis algorithm to give subject matter experts the ability to leverage
+						their expertise and hand-select good training
+						data, and built an autoencoder to build an autoencoder algorithm to limit bias.</p>
 				</div>
 			</div>
-			<!-- <div class="carousel-item">
-				<img class="d-block" src="https://i.imgur.com/3JYzDnY.jpg" alt="Second slide">
-			</div>
-			<div class="carousel-item">
-				<img class="d-block" src="https://i.imgur.com/lNUwNuI.jpg" alt="Third slide">
-			</div>
-			<div class="carousel-item">
-				<img class="d-block" src="https://i.imgur.com/e6vA6yq.jpg" alt="Fourth slide">
-			</div> -->
 		</div>
-		<a class="carousel-control-prev" href="#carousel" role="button" data-slide="prev">
-			<i class="fa fa-chevron-left fa-2x" data-fa-transform="left-1"></i>
-		</a>
-		<a class="carousel-control-next" href="#carousel" role="button" data-slide="next">
-			<i class="fa fa-chevron-right fa-2x" data-fa-transform="right-1"></i>
-		</a>
 	</div>
 
-	<div class="modalDescription" style="border-top: solid 1px #EEEEEE;">
-		<h1 class="modal-title" id="modalTitle">Anomaly Prediction for UF/XMF Filtration</h1>
-		<p class="mb-2">At Amgen, the filtration step of monoclonal antibodies is monitored in real-time using PI and PI
-			Historian, the yield
-			is measured using an MES system, and any sort of equipment maintenence is recorded in Maximo -- getting
-			these systems to talk to
-			each other requires some data engineering!
-		</p>
+	<div class="container-fluid" style="background-color: #FFFFFF; border-radius: 0px 0px 0px 3000px / 100px;">
+		<div class="container">
+			<h1>The Problem</h1>
+			<p class="mb-3">Problems in the ATF section of the downstream manufacturing unit can cause delays in
+				subsequent
+				unit operations and an overall decrease in revenue
+			</p>
 
-	</div>
-	<div class="modal-body-text">
-		<h1 class="mt-4 mb-5">Data Engineering & Visualization</h1>
-		<div class="row mb-4">
-			<div class="col-xs-12 col-md-2 roleIcon"><i class="fas fa-users fa-3x mb-2"></i></div>
-			<p class="col-xs-12 col-md-10"> I leveraged Databricks to create an automated data pipeline to fetch
-				information from
-				the source systems using their APIs and store the data into AWS Redshift. We built a webhook such that
-				the data was
-				only fetched when new data was created -- instead of trying to pull the data on a scheduled cadence.
-				Joining all of the
-				data together in one dashboard <i>Spotfire</i>, allowed for our user group to have all of the relevant
-				information in one
-				spot. Score! However, we decided to go a step further.
+			<div class="screenFull text-center">
+				<img class="screenshot" src="img/rtatf_dashboard.png">
+			</div>
+			<h1 class="mb-4">Our Approach</h1>
+
+			<p>Here's a high-fidelity copy of the dashboard (for privacy reasons) 😎<br><br>
+				At the 1,000ft view, a user could clearly see that there was predictability that running multiple
+				batches on a single filter
+				without maintenence is a terrible idea from the large graph on the bottom. Which, at the time, being
+				able to visualize this data was
+				already a huge win. <br><br>However, what if I told you we could predict a filter's performance in
+				real-time using
+				data from all 12 of it's pressure, positioning, and cycle time sensors?
 			</p>
 		</div>
-		<div class="row mb-4">
-			<div class="col-xs-12 col-md-2 roleIcon"><i class="fas fa-wrench fa-3x mb-2"></i></div>
-			<p class="col-xs-12 col-md-10">We created two separate ML functions (slow-feature analysis and an
-				autoencoder) to detect any variations
-				from ideal operation. My co-worker developed a SFA algorithm that would take user-inputted baselines to
-				act as training group for the algorithm
-				that serves as the "ideal" operations. I created a web application for this model selection in Dash.
-				Additionally, I developed an autoencoder that
-				would be able to predict a bad batch without user-inputted baselines to eliminate bias!
-			</p>
-		</div>
-		<button type="button" class="btn btn-primary closeModal mt-1" data-dismiss="modal" aria-label="Close">
-			Exit
-		</button>
 	</div>
 
+
+	<div class="container-fluid">
+		<div class="container">
+			<h1>Modelling</h1>
+			<div class="screenFull text-center">
+				<img src="img/sfa.png">
+			</div>
+			<h2 class="mb-4">Slow-Feature Analysis</h2>
+			<p>Slow feature analysis (SFA) algorithm is an unsupervised learning algorithm for extracting slowly varying
+				features from a quickly varying input signal.
+				Given a set of batches that display optimal performance, the algorithm would be able to determine how
+				much a batch varies from optimal performance. To implement this,
+				we set a threshold variance value such that if the filter started deviating from normal performance, it
+				would alert users!
+			</p>
+			<div class="screenFull text-center">
+				<img class="screenFull text-center" src="img/autoencoder.png">
+			</div>
+			<h2 class="mb-4">Autoencoder</h2>
+			<p>An autoencoder is a type of artificial neural network used to learn efficient patterns and trends of
+				unlabeled data.
+				Our autoencoder is trained on various “good” batches, reconstructs them into one matrix, which
+				subsequent batches are compared against to determine a “health score”. This
+				approach attempts to look at the data from a batch as a whole, as opposed to the variance from different
+				data points. By providing a separate scoring system, we gave our users
+				the ability to have a double-confirmation of poor performance.
+			</p>
+		</div>
+	</div>
+
+
+
+	<div class="container-fluid" style="background-color: #FFFFFF; border-bottom-right-radius: 3000px 100px;">
+		<div class="container">
+			<h1 class="mt-5 mb-3">Learnings</h1>
+			<p>This was a great first data science project with real-world impact! We scaled this system to 3
+				international sites
+				while maintaining loyal adoption and steady feedback from our user group. From onboarding remotely
+				during the pandemic,
+				it was refreshing to see how this dashboard was constantly on display in common areas during my on-site
+				visits.
+			</p>
+			<div class="quote text-center mt-5">"The RTATF dashboard enables staff to allocate time towards the other
+				unit operations
+				that typically require more attention"
+			</div>
+			<p>After seeing the RTATF dashboard project from inception to implementation, it was a shame that I couldn't
+				spend
+				more time acting on user feedback after it matured into coworker's workstreams. I was rotated into a new
+				medical function
+				after 8 months of tinkering. However, the full-stack engineering experience was extremely beneficial to
+				my career in both
+				data science and software engineering!
+			</p>
+		</div>
+	</div>
 </div>
